@@ -1,0 +1,2 @@
+alphabeth = (a..z)
+

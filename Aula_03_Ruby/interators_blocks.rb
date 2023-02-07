@@ -71,3 +71,17 @@ timer do
   sleep(3)
   puts "i am awake and leaving the block!"
 end
+
+
+#array.insert(0, 'Element') - adiciona um elemento dentro do array usando um numero como index para dizer em qual posição deve entrar
+
+#array.unishift('element') - adiciona na primeira posição do array
+
+#update element
+
+#array.delete ('element') - deleta tudo que correspode ao elemento que foi dito
+#array.deelet_at(2) - usa o index para indicar em qual posição quer deletar o elemento da array
+#array.shift - remove o ultimo elemento
+#array.pop - remove o ultimo elemento
+#array.pop(2) remove os últimos elementos usando um indice para dizer quantos quer tirar do final da array
+#array.drop(2) remove os primeiros itens da array usando o número como indice para dizer quantos irão ser retirados e retorna o resto da array
