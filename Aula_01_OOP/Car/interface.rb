@@ -1,4 +1,4 @@
-require_relative "car.rb"
+require_relative '../car'
 
 puts "Insert the color"
 new_color = gets.chomp

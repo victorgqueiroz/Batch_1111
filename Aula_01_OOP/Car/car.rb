@@ -1,4 +1,4 @@
-require_relative "interface"
+require "pry-byebug"
 
 class Car
   attr_reader :color, :brand
@@ -46,21 +46,21 @@ class Car
   end
 
 end
-
+new_car = Car.new("", "")
 
 puts "Insert the color and the brand"
 new_color = gets.chomp
-new_car = Car.new(new_color, new_brand)
 new_car.color = new_color
-puts "Your new car is color #{new}"
+binding.pry
+puts "Your new car is color #{new_color}"
 
 puts "--" * 20
 
-# puts "Now what's the brand?"
-# new_brand = gets.chomp
-# new_car.brand = new_brand
-# puts "The brand is #{new_car.brand}"
-
+puts "Now what's the brand?"
+new_brand = gets.chomp
+new_car.brand = new_brand
+binding.pry
+puts "The brand is #{new_car.brand}"
 # puts "--" * 20
 
 puts "Let's start the car? Yes or No?"
@@ -73,7 +73,7 @@ else
   new_car.stop
   puts "Whyyy let's turn on this monster baby"
 end
-
+binding.pry
 # case start_car
 # when "Yes" = new_car.start
 #   puts "Oook let's gooo"
@@ -92,7 +92,7 @@ puts new_car.engine_started? ? "Yes" : "No"
 # puts new_car.engine_started? ? "Yes" : "No"
 
 # puts "the new car color is #{new_car.color}"
-
+puts "--" * 20
 puts "Do you want stop the car? Yes or No"
 stop_car = gets.chomp
 
